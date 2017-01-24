@@ -5,7 +5,7 @@ MAINTAINER FFantasy <qwertxp@gmail.com>
 
 #prepare
 WORKDIR "/root"
-RUN	apt-get update
+RUN apt-get update
 RUN apt-get -y install wget
 RUN apt-get -y install make
 
@@ -29,3 +29,4 @@ RUN rm -rf /root/*
 #add script file
 ADD runcontroler.sh /root/
 ADD runclient.sh /root/
+
