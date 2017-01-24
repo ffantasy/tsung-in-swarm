@@ -30,7 +30,7 @@ echo -e "\e[33mrun contorler...\e[0m"
 docker exec -it $controlerId bash runcontroler.sh $2
 
 echo -e "\e[33mremove service...\e[0m"
-docker service rm $CONTROLER_NAME $CLIENT_NAME
-echo -e "\e[33mremove container...\e[0m"
-docker rm -f $(docker ps -aqf "name=$PREFIX")
+docker service rm $CLIENT_NAME $CONTROLER_NAME
+#make sure remove controler container
+docker rm -f $(docker ps -aqf "name=$CONTROLER_NAME") > /dev/null
 
