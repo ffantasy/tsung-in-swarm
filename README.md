@@ -7,7 +7,7 @@ Use beblow command(assume your have a host and ip is 192.168.0.10):
 ```Shell
 $ docker swarm init --advertise-addr 192.168.0.10
 ```
-more info: https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+More info: https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
 
 **Step 2**, Create your tsung test config file.  
 Here a example file: https://github.com/ffantasy/tsung-in-swarm/blob/master/tsungConfig.xml      
