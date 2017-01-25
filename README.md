@@ -18,7 +18,7 @@ More info: http://tsung.erlang-projects.org/user_manual/index.html
 ```
 $ ./tis.sh /home/root/tsungConfig.xml 2
 ```
-The script task 2 parameters, first parameter is absolute path to your tsung config file, second parameter indicate that how many clients would you like to run in your docker swarm.  
+The script takes 2 parameters, first parameter is absolute path to your tsung config file, second parameter indicate that how many clients would you like to run in your docker swarm.  
 Download script here: https://github.com/ffantasy/tsung-in-swarm/blob/master/tis.sh
 
 **Step 4**, Check the test reports.   
