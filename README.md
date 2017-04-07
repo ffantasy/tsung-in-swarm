@@ -18,7 +18,7 @@ More info: http://tsung.erlang-projects.org/user_manual/index.html
 ```Shell
 # ./tis.sh /home/root/tsungConfig.xml 2 0
 ```
-The script takes 3 parameters, first parameter is absolute path to your tsung config file, second parameter indicate that how many clients would you like to run in your docker swarm, third parameter indicate that if tsung *WORKER* can be run on *CONTROLER* host, *0* for no, *1* for yes. this option help you ensure *WORKER* run on load generation host only.
+The script takes 3 parameters, first parameter is absolute path to your tsung config file, second parameter indicate that how many clients would you like to run in your docker swarm, third parameter indicate that if tsung *WORKER* can be run on *CONTROLER* host, *0* for no, *1* for yes. this option help you ensure *WORKER* run on load generation host only.  
 Download script here: https://github.com/ffantasy/tsung-in-swarm/blob/master/tis.sh
 
 **Step 4**, Check the test reports.   
