@@ -3,8 +3,8 @@
 <tsung loglevel="notice" version="1.0">
 
   <!-- Client side setup -->
-  <clients>
-  </clients>
+  <!-- keep this node empty -->
+  <clients></clients>
 
   <!-- Server side setup -->
 <servers>
@@ -13,8 +13,8 @@
 
   <!-- to start os monitoring (cpu, network, memory). Use an erlang
   agent on the remote machine or SNMP. erlang is the default --> 
-  <monitoring>
-  </monitoring>
+  <!-- keep this node empty, if you don't want to monitoring, you can delete this node. -->
+  <monitoring></monitoring>
   
   <load>
   <!-- several arrival phases can be set: for each phase, you can set
