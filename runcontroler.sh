@@ -23,6 +23,6 @@ while [ $lineCount -lt $1 ]; do
     echo -ne "\r$lineCount client(s) has join."
 done
 echo -e "\n\e[33mrun tsung...\e[0m"
-sed -i "/<clients>/r $CLIENTS_STORE_FILE" $TSUNG_CONFIG_FILE
-sed -i "/<monitoring>/r $MONITORS_STORE_FILE" $TSUNG_CONFIG_FILE
+sed -i "s/<clients>/<clients>$(cat $CLIENTS_STORE_FILE)/" $TSUNG_CONFIG_FILE
+sed -i "s/<monitoring>/<monitoring>$(cat $MONITORS_STORE_FILE)/" $TSUNG_CONFIG_FILE
 tsung -f $TSUNG_CONFIG_FILE -l log -k start
